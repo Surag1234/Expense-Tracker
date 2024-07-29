@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  #message {
+    margin-top: 20px;
+    color: red;
+  }
+  
+  /* Existing styles */
+
+/* Balance and Settlement Sheets */
+#balanceSheet, #settlementSheet {
+  margin-top: 20px;
+}
+
+#balanceSheet table, #settlementSheet table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#balanceSheet th, #settlementSheet th,
+#balanceSheet td, #settlementSheet td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#balanceSheet th, #settlementSheet th {
+  background-color: #f2f2f2;
+}
