@@ -1,8 +1,8 @@
-Expense Tracker App
-Overview
+#Expense Tracker App
+#Overview
 The Expense Tracker App is a web-based application designed to help users manage and split expenses among friends or group members. The app provides functionalities for creating groups, adding expenses, viewing balance sheets, and calculating settlements.
 
-Features
+#Features
 User Authentication: Users can sign up and log in securely using JWT tokens.
 Group Management: Create and manage groups of users.
 Expense Management: Add and track expenses within groups.
