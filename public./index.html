@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="authForms">
+    <button id="signupButton">Sign Up</button>
+    <button id="loginButton">Login</button>
+
+    <!-- Signup Form -->
+    <div id="signupForm" style="display:none;">
+      <h2>Sign Up</h2>
+      <form>
+        <div>
+          <label for="signupUsername">Username:</label>
+          <input type="text" id="signupUsername" name="username" required>
+        </div>
+        <div>
+          <label for="signupEmail">Email:</label>
+          <input type="email" id="signupEmail" name="email" required>
+        </div>
+        <div>
+          <label for="signupPassword">Password:</label>
+          <input type="password" id="signupPassword" name="password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+        <div id="signupMessage"></div>
+      </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" style="display:none;">
+      <h2>Login</h2>
+      <form>
+        <div>
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" name="email" required>
+        </div>
+        <div>
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+        <div id="loginMessage"></div>
+      </form>
+    </div>
+  </div>
+
+  <div id="groupSection" style="display:none;">
+    <button id="logoutButton">Logout</button>
+
+    <!-- Group Form -->
+    <h2>Create or Update Group</h2>
+    <form id="groupForm">
+      <div>
+        <label for="existingGroups">Select Existing Group:</label>
+        <select id="existingGroups" name="existingGroups">
+          <option value="">Select an existing group</option>
+        </select>
+      </div>
+      <div>
+        <label for="groupName">Group Name:</label>
+        <input type="text" id="groupName" name="groupName" placeholder="Enter group name" required>
+      </div>
+      <div>
+        <label for="members">Members (comma separated emails):</label>
+        <input type="text" id="members" name="members" placeholder="email1@example.com, email2@example.com" required>
+      </div>
+      <div>
+        <label for="totalAmount">Total Amount:</label>
+        <input type="number" id="totalAmount" name="totalAmount" required>
+      </div>
+      <div>
+        <label for="splitMethod">Split Method:</label>
+        <select id="splitMethod" name="splitMethod">
+          <option value="exact">Exact Amount</option>
+          <option value="percentage">Percentage</option>
+        </select>
+      </div>
+      <div id="splitDetails"></div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Balance Sheet -->
+    <div id="balanceSheet">
+      <h2>Balance Sheet</h2>
+    </div>
+
+    <!-- Settlement Sheet -->
+    <div id="settlementSheet">
+      <h2>Settlement Sheet</h2>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
